@@ -1,7 +1,12 @@
-# %%
 import json
 import numpy as np
 import pandas as pd
+
+"""
+Converts JSON files to CSV through the use of DataFrames
+
+Additionally provides support for loading JSON into Pandas DataFrames
+"""
 
 
 def load_json_to_dataframe(file_path, limit=-1):
@@ -23,7 +28,6 @@ def load_json_to_dataframe(file_path, limit=-1):
 
 
 if __name__ == '__main__':
-
     names = ['yelp_academic_dataset_business',
              'yelp_academic_dataset_review',
              'yelp_academic_dataset_user',
