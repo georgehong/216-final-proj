@@ -35,4 +35,4 @@ if __name__ == '__main__':
 
     for file_name in names:
         df = load_json_to_dataframe('data/' + file_name + '.json')
-        df.to_csv('data/' + file_name + '.csv')
+        df.to_csv('data/' + file_name + '.csv', index=False)
