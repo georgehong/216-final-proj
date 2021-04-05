@@ -13,6 +13,7 @@
 - `yelp_academic_dataset_covid_features.json`
 
 [Restaurant Business Rankings 2020](https://www.kaggle.com/michau96/restaurant-business-rankings-2020?select=Top250.csv)
+
 - `Top250.csv`
 
 ## Quickstart
@@ -39,4 +40,9 @@ print(yelp_df.shape)
 Based on a user’s previous Yelp ratings and restaurants they’ve visited, can we predict another restaurant from the
 dataset that they will enjoy using a machine learning model? What factors are most important in identifying a “match”
 between a user’s previously high-rated restaurants and a new restaurant for them to try?
+
+### Filtering Data
+
+`semantic_filter.ipynb` allows the data scientist to choose a text `query` and similarity `threshold` to return only the
+businesses whose `categories` (classification) provides a sufficient semantic match.
   
