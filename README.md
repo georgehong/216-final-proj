@@ -23,6 +23,7 @@ Place the above `.json` files into a folder called `data`
 The following script converts the files into `.csv`.  *Caution: May take a while to run*
 
 ```
+pip install -r requirements.txt
 python3 load_data_toolkit.py
 ```
 
@@ -45,4 +46,12 @@ between a user’s previously high-rated restaurants and a new restaurant for th
 
 `semantic_filter.ipynb` allows the data scientist to choose a text `query` and similarity `threshold` to return only the
 businesses whose `categories` (classification) provides a sufficient semantic match.
+
+### Interaction Matrix
+`collaborative_rec.ipynb` (Deprecated due to slow performance)
+
+### KNN Semantic Similarity Match
+
+`business_similarity_rec.ipynb` uses Google's Universal Sentence Encoder to compute vectors from the meaning of each
+business, and uses cosine similarity to determine the best matches.
   
